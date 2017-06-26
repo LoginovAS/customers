@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <p:dataTable var="customer" value="customerBean.customers">
+            <p:column>
+                <f:facet name="header">
+                    <h:outputText value="Customer ID" />
+                </f:facet>
+                <h:outputText value="customer.customerId" />
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                    <h:outputText value="Customer Name" />
+                </f:facet>
+                <h:outputText value="customer.customerName" />
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                    <h:outputText value="Customer Card Number" />
+                </f:facet>
+                <h:outputText value="customer.cardNumber" />
+            </p:column>
+        </p:dataTable>
+    </h:body>
+</html>
+
